@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+/* Reset some basic elements */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+body {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+/* Header styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+    width: 100%; /* Ensure header takes full width */
+    background-color: black;
+    position: relative; /* Needed for absolute positioning of the nav-menu */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Add shadow for better separation */
+}
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    flex: 1;
+}
+
+.logo {
+    cursor: pointer;
+    width: 50px; /* Adjust as needed */
+    height: 50px; /* Adjust as needed */
+}
+
+.nav_links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav_links li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.nav_links li a:hover {
+    color: darkgrey;
+}
+
+button {
+    padding: 9px 25px;
+    background-color: white;
+    border: 1px solid #ccc; /* Add border style */
+    border-radius: 50px;
+    cursor: pointer; 
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: greenyellow;
+}
+
+footer {
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: auto;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start; /* Align items to the start on mobile */
+        padding: 10px;
+    }
+
+    .logo-container {
+        margin-bottom: 10px; /* Space between logo and nav */
+    }
+
+    .tgl {
+        align-self: flex-end; /* Align button to the right */
+        margin-top: 10px;
+    }
+
+    .nav_links {
+        display: none; /* Hide links by default */
+        flex-direction: column;
+        width: 100%;
+        background-color: #ffffff;
+        position: absolute;
+        top: 60px; /* Space from the header */
+        left: 0;
+        padding: 20px;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+
+    .nav_links.active {
+        display: flex; /* Show links when active */
+    }
+
+    .nav_links li {
+        margin: 10px 0;
+    }
+
+    .menu-toggle {
+        font-size: 24px;
+        cursor: pointer;
+        position: absolute;
+        top: 20px;
+        left: 20px; /* Adjust position as needed */
+    }
+}
+
+/* Loader and heading styles */
+.intro-container {
+    text-align: center;
+    color: white;
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 1em;
+    margin-bottom: 20px;
+}
+
+.loader {
+    display: block;
+    --height-of-loader: 5px;
+    --loader-color: #98ff1a;
+    width: 130px;
+    height: var(--height-of-loader);
+    border-radius: 50px;
+    background-color: rgba(0, 0, 0, 0.2);
+    position: relative;
+    margin: 0 auto; /* Center the loader */
+}
+
+.loader::before {
+    content: "";
+    position: absolute;
+    background: var(--loader-color);
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    border-radius: 30px;
+    animation: moving 1.5s ease-in-out infinite;
+}
+
+@keyframes moving {
+    50% {
+        width: 100%;
+    }
+
+    100% {
+        width: 0;
+        right: 0;
+        left: unset;
+    }
+}
+
+/* Responsive Design */
+
+/* For devices with a max-width of 1200px */
+@media (max-width: 1200px) {
+    h1 {
+        font-size: 2.5em;
+    }
+    .loader {
+        width: 110px;
+    }
+}
+
+/* For devices with a max-width of 992px */
+@media (max-width: 992px) {
+    h1 {
+        font-size: 2em;
+    }
+    h2 {
+        font-size: 1.5em;
+    }
+    .loader {
+        width: 100px;
+    }
+}
+
+/* For devices with a max-width of 768px */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.8em;
+    }
+    h2 {
+        font-size: 1.4em;
+    }
+    .loader {
+        width: 90px;
+    }
+}
+
+/* For devices with a max-width of 576px */
+@media (max-width: 576px) {
+    h1 {
+        font-size: 1.5em;
+    }
+    h2 {
+        font-size: 1.2em;
+    }
+    .loader {
+        width: 80px;
+    }
+}
