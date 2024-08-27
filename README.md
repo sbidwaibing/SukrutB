@@ -13,7 +13,7 @@
   ```
 ## Google PageSpeed Insights Achieved
 
-![PageSpeed Analysis](images/analysis.png)
+![PageSpeed Analysis](assets/images/analysis.png)
 
   ```
   Model: Desktop Version |
