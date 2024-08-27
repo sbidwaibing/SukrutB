@@ -13,8 +13,7 @@
   ```
 ## Google PageSpeed Insights Achieved
 
-![PageSpeed Analysis](assets/images/analysis.png)
-<img src="assets/images/analysis.png" alt="PageSpeed Analysis" width="300"/>
+<img src="assets/images/analysis.png" alt="PageSpeed Analysis" width="800"/>
 
   ```
   Model: Desktop Version |
