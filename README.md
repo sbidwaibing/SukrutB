@@ -14,6 +14,7 @@
 ## Google PageSpeed Insights Achieved
 
 ![PageSpeed Analysis](assets/images/analysis.png)
+<img src="images/portfolio-screenshot.png" alt="SukrutB Portfolio Screenshot" width="300"/>
 
   ```
   Model: Desktop Version |
