@@ -148,6 +148,7 @@ h2 {
     display: block;
     --height-of-loader: 5px;
     --loader-color: #98ff1a;
+    
     width: 130px;
     height: var(--height-of-loader);
     border-radius: 50px;

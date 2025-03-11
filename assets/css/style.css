@@ -2,15 +2,6 @@
   #style.css
 \*-----------------------------------*/
 
-
-/**
- * copyright 2022 @codewithsadee
- */
-
-
-
-
-
 /*-----------------------------------*\
   #CUSTOM PROPERTY
 \*-----------------------------------*/
@@ -35,7 +26,7 @@
   ), hsl(240, 2%, 13%);
   --bg-gradient-yellow-1: linear-gradient(
     to bottom right, 
-    hsl(186, 100%, 43%) 0%, 
+    hsl(181, 100%, 68%) 0%, 
     hsla(36, 100%, 69%, 0) 50%
   );
   --bg-gradient-yellow-2: linear-gradient(
@@ -50,8 +41,8 @@
   );
   --text-gradient-yellow: linear-gradient(
     to right, 
-    hsl(183, 78%, 40%),
-    hsl(183, 78%, 40%)
+    hsl(181, 100%, 68%),
+    hsl(181, 100%, 68%)
   );
 
   /* solid */
@@ -63,9 +54,9 @@
   --smoky-black: hsl(0, 0%, 7%);
   --white-1: hsl(0, 0%, 100%);
   --white-2: hsl(0, 0%, 98%);
-  --orange-yellow-crayola:hsl(181, 100%, 42%);
-  --vegas-gold: hsl(181, 100%, 42%);
-  --light-gray: hsl(0, 0%, 84%);
+  --orange-yellow-crayola:hsl(181, 100%, 68%);
+  --vegas-gold: hsl(181, 100%, 68%);
+  --light-gray: hsl(0, 0%, 91%);
   --light-gray-70: hsla(0, 0%, 84%, 0.7);
   --bittersweet-shimmer: hsl(0, 43%, 51%);
 
@@ -869,7 +860,7 @@ main {
 }
 
 .tag {
-  background-color: hsl(183, 78%, 40%);;
+  background-color: hsl(199, 100%, 33%);;
   color: #fff;
   padding: 5px 10px;
   border-radius: 6px;
