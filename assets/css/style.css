@@ -17,6 +17,7 @@
   --bg-gradient-onyx: linear-gradient(
     to bottom right, 
     hsl(240, 1%, 25%) 3%, 
+    
     hsl(0, 0%, 19%) 97%
   );
   --bg-gradient-jet: linear-gradient(
@@ -27,7 +28,7 @@
   --bg-gradient-yellow-1: linear-gradient(
     to bottom right, 
     /* hsl(181, 100%, 68%) 0%, */
-    #A3CAE3
+    #00d5ff
     hsla(36, 100%, 69%, 0) 50%
   );
   --bg-gradient-yellow-2: linear-gradient(
@@ -43,9 +44,9 @@
   --text-gradient-yellow: linear-gradient(
     to right, 
     /* hsl(181, 100%, 68%), */
-    #A3CAE3
+     #00d5ff
     /* hsl(181, 100%, 68%) */
-    #A3CAE3
+     #00d5ff
   );
 
   /* solid */
@@ -57,8 +58,8 @@
   --smoky-black: hsl(0, 0%, 7%);
   --white-1: hsl(0, 0%, 100%);
   --white-2: hsl(0, 0%, 98%);
-  --orange-yellow-crayola:#A3CAE3;
-  --vegas-gold: #A3CAE3;
+  --orange-yellow-crayola: #00d5ff;
+  --vegas-gold:  #00d5ff;
   --light-gray: hsl(0, 0%, 91%);
   --light-gray-70: hsla(0, 0%, 84%, 0.7);
   --bittersweet-shimmer: hsl(0, 43%, 51%);
@@ -862,8 +863,9 @@ main {
   margin-top: 6px;
 }
 
+
 .tag {
-  background-color: #A3CAE3;
+  background-color:  #00d5ff;
   color: #fff;
   padding: 5px 10px;
   border-radius: 6px;
@@ -1931,7 +1933,7 @@ textarea.form-input::-webkit-resizer { display: none; }
 .custom-button {
   display: inline-block; /* Make the link behave like a button */
   padding: 10px 20px; /* Add padding to the button */
-  background-color: #A3CAE3; /* Button background color */
+  background-color:  #00d5ff; /* Button background color */
   color: #ffffff; /* Text color */
   border: none; /* Remove default border */
   border-radius: 5px; /* Rounded corners */
